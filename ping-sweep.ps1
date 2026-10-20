@@ -4,6 +4,9 @@ function Invoke-PingSweep {
     )
 
     foreach ($Cible in $Cibles) {
-        Test-Connection -ComputerName $Cible -Count 1 -Quiet
+        [pscustomobject]@{
+            Cible = $Cible
+            Accessible = Test-Connection -ComputerName $Cible -Count 1 -Quiet
+        }
     }
 }
