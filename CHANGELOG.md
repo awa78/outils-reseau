@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+### Correctifs
+- Ajoute un avertissement lorsque la liste des cibles est vide.
+
 ## 1.0.0
 
 ### Fonctionnalites
